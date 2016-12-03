@@ -2,22 +2,23 @@
 $primary-color: #FFFFFF;
 $secondary-color: #F9F9F9;
 $red: #ad0000;
+$light: #EEEEEE;
+$black: black;
 
 /*CSS*/
 body {
       padding: 25px;
       font-family: Helvetica;
+      width: 100%;
 }
 
 /*PURE*/
 .pure-g {
-      border: 5px solid orange;
       margin-bottom: 25px;
 }
 
 .pure-u-1 {
       box-sizing: border-box;
-      border: 5px solid cadetblue;
       padding: 25px;
       text-align: center;
 }
@@ -34,7 +35,7 @@ body {
 }
 
 .pure-menu-link:hover{
-  color: $red;
+      color: $red;
 }
 
 .pure-menu-list{
@@ -46,10 +47,47 @@ body {
       float: left;
 }
 
+.pure-u-lg-1-3{
+      width: 33%;
+}
+
+.pure-button {
+      background-color: $black;
+      width: 10%;
+      font-size: 0.95rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      height: 40px;
+}
+
+.pure-button:hover {
+      background-color: $red;
+      transition: all .25s;
+}
+
+input{
+      width: 25%;
+}
+
+#foo {
+      height: 200px;
+}
+
+#name:focus, #password:focus, #foo:focus{
+      border: 1px solid $red;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(173, 0, 0, .6);
+}
+
 /* own */
 h1 {
-      font-size: 3em;
-      font-weight: 900;
+      font-size: 4em;
+      font-weight: lighter;
+      background-image: url(https://images.unsplash.com/photo-1462121457351-9fb0f5622b72?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&s=0db5ac4b6cab2cd3a9c02bd231a9521e);
+      height: 600px;
+      margin-top: -15px;
+      width: 100%;
+      color: $primary-color;
+      padding-top: 450px;
 }
 
 h2 {
@@ -58,9 +96,23 @@ h2 {
       margin-bottom: 25px;
 }
 
+h3{
+      font-weight: 100;
+      font-size: 36px;
+      margin: 40px auto 20px;
+}
+
+h4{
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 20px;
+}
+
 p {
       margin-bottom: 25px;
       line-height: 1.6em;
+      font-size: 16px;
+      font-weight: 300;
 }
 
 ul {
@@ -74,12 +126,51 @@ ul li a {
 }
 
 #work {
-  width: 20%;
+      width: 20%;
 }
 
-#banner {
-  width: 100%;
+.light{
+      width: 10%;
+      height: 2px;
+      background-color: $light;
+      margin: 15px auto 20px;
 }
+
+.about {
+      width: 40%;
+      margin: auto;
+      margin-bottom: 80px;
+}
+
+i{
+      margin-bottom: 20px;
+}
+
+.text-right {
+      float: right;
+      font-weight: 500;
+}
+
+.soon {
+      font-size: 20px;
+      font-weight: 500;
+}
+
+footer{
+      background-color: $black;
+      height: 200px;
+}
+
+#service, #client {
+      background-color:  $secondary-color;
+      height: 400px;
+}
+
+#previous {
+      margin-bottom: 50px;
+}
+
+
 
 /*Media query*/
 @media (max-width: 48em) {
