@@ -4,23 +4,34 @@ $secondary-color: #F9F9F9;
 $red: #ad0000;
 $light: #EEEEEE;
 $black: black;
+$font-stack: 'Open Sans', sans-serif;
 
 /*CSS*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
       padding: 25px;
-      font-family: Helvetica;
+      font-family: $font-stack;
       width: 100%;
+      background-image: url(https://s-media-cache-ak0.pinimg.com/564x/06/5f/cb/065fcba69d5ec8ce7da3da59d988d972.jpg);
+      background-size: auto;
 }
 
 /*PURE*/
 .pure-g {
       margin-bottom: 25px;
+      font-family: $font-stack;
 }
 
 .pure-u-1 {
       box-sizing: border-box;
       padding: 25px;
       text-align: center;
+      font-family: $font-stack;
 }
 
 .pure-menu{
@@ -28,6 +39,7 @@ body {
       background-color: $primary-color;
       height: 50px;
       margin-top: -26px;
+      font-family: $font-stack;
 }
 
 .pure-menu-item{
@@ -41,6 +53,7 @@ body {
 .pure-menu-list{
       float: right;
       margin-right: 45px;
+      font-family: $font-stack;
 }
 
 .pure-menu-link{
@@ -82,8 +95,7 @@ input{
 h1 {
       font-size: 4em;
       font-weight: lighter;
-      background-image: url(https://s-media-cache-ak0.pinimg.com/564x/06/5f/cb/065fcba69d5ec8ce7da3da59d988d972.jpg);
-
+      font-family: $font-stack;
       height: 350px;
       margin-top: -15px;
       width: 100%;
@@ -95,22 +107,26 @@ h2 {
       font-size: 1.1em;
       font-weight: 900;
       margin-bottom: 25px;
+      font-family: $font-stack;
 }
 
 h3{
-      font-weight: 100;
+      font-weight: 300;
       font-size: 36px;
       margin: 40px auto 20px;
+      font-family: $font-stack;
 }
 
 h4{
       font-size: 24px;
       font-weight: 300;
       margin-bottom: 20px;
+      font-family: $font-stack;
 }
 
 p {
       margin-bottom: 25px;
+      font-family: $font-stack;
       line-height: 1.6em;
       font-size: 16px;
       font-weight: 300;
@@ -123,11 +139,14 @@ ul {
 
 ul li a {
       text-decoration: none;
-
+      font-family: $font-stack;
 }
 
 #work {
-      width: 20%;
+      width: 30%;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      border: 1px solid $light;
 }
 
 .light{
@@ -141,6 +160,7 @@ ul li a {
       width: 40%;
       margin: auto;
       margin-bottom: 80px;
+      font-family: $font-stack;
 }
 
 i{
@@ -155,11 +175,13 @@ i{
 .soon {
       font-size: 20px;
       font-weight: 500;
+      font-family: $font-stack;
 }
 
 footer{
       background-color: $black;
       height: 120px;
+      margin-top: -25px;
 }
 
 #service, #client {
@@ -169,6 +191,14 @@ footer{
 
 #previous {
       margin-bottom: 50px;
+}
+
+#previous, #me, #hire {
+      background-color: $primary-color;
+}
+
+#client{
+  margin-top: -50px;
 }
 
 footer ul li a{
@@ -182,23 +212,27 @@ footer ul {
 }
 
 footer ul li:not(:first-child) a {
-  margin-left: 1em;
+    margin-left: 1em;
 }
 
 footer ul a {
-  display: block;
-  padding: 0.5em .65rem;
-  font-size: 1rem;
-  color: #fff;
-  border-radius: 50%;
-  border: 2px solid;
-  margin-top: 40px;
+    display: block;
+    padding: 0.5em .65rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid;
+    margin-top: 40px;
 
-  &:hover,
-  &:focus {
-    color: $red;
-    transition: all .25s;
+    &:hover,
+    &:focus {
+      color: $red;
+      transition: all .25s;
   }
+}
+
+button {
+    margin-top: 20px;
 }
 
 
