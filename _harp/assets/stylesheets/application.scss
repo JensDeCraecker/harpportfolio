@@ -82,12 +82,13 @@ input{
 h1 {
       font-size: 4em;
       font-weight: lighter;
-      background-image: url(https://images.unsplash.com/photo-1462121457351-9fb0f5622b72?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&s=0db5ac4b6cab2cd3a9c02bd231a9521e);
-      height: 600px;
+      background-image: url(https://s-media-cache-ak0.pinimg.com/564x/06/5f/cb/065fcba69d5ec8ce7da3da59d988d972.jpg);
+
+      height: 350px;
       margin-top: -15px;
       width: 100%;
       color: $primary-color;
-      padding-top: 450px;
+      padding-top: 200px;
 }
 
 h2 {
@@ -158,7 +159,7 @@ i{
 
 footer{
       background-color: $black;
-      height: 200px;
+      height: 120px;
 }
 
 #service, #client {
@@ -168,6 +169,36 @@ footer{
 
 #previous {
       margin-bottom: 50px;
+}
+
+footer ul li a{
+      color: $primary-color;
+      float: left;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li:not(:first-child) a {
+  margin-left: 1em;
+}
+
+footer ul a {
+  display: block;
+  padding: 0.5em .65rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-top: 40px;
+
+  &:hover,
+  &:focus {
+    color: $red;
+    transition: all .25s;
+  }
 }
 
 
