@@ -1,8 +1,15 @@
+/*SCSS */
+$primary-color: #FFFFFF;
+$secondary-color: #F9F9F9;
+$red: #ad0000;
+
+/*CSS*/
 body {
       padding: 25px;
-      font-family: helvetica, sans-serif;
+      font-family: Helvetica;
 }
 
+/*PURE*/
 .pure-g {
       border: 5px solid orange;
       margin-bottom: 25px;
@@ -15,8 +22,33 @@ body {
       text-align: center;
 }
 
+.pure-menu{
+      position: fixed;
+      background-color: $primary-color;
+      height: 50px;
+      margin-top: -26px;
+}
+
+.pure-menu-item{
+      letter-spacing: normal;
+}
+
+.pure-menu-link:hover{
+  color: $red;
+}
+
+.pure-menu-list{
+      float: right;
+      margin-right: 45px;
+}
+
+.pure-menu-link{
+      float: left;
+}
+
+/* own */
 h1 {
-      font-size: 1.2em;
+      font-size: 3em;
       font-weight: 900;
 }
 
@@ -28,7 +60,6 @@ h2 {
 
 p {
       margin-bottom: 25px;
-      text-align: left;
       line-height: 1.6em;
 }
 
@@ -37,6 +68,20 @@ ul {
       padding: 0;
 }
 
+ul li a {
+      text-decoration: none;
+
+}
+
+#work {
+  width: 20%;
+}
+
+#banner {
+  width: 100%;
+}
+
+/*Media query*/
 @media (max-width: 48em) {
       li a {
             color: red;
