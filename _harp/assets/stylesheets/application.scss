@@ -17,8 +17,8 @@ body {
       padding: 25px;
       font-family: $font-stack;
       width: 100%;
-      background-image: url(https://4.bp.blogspot.com/-b5ol2tT2-8U/VSPSEjBNWeI/AAAAAAABgf0/vvG0NqwM1O0/s0/Architecture_EMP_Museum_uhd.jpg);
-      
+      background-image: url(https://raw.githubusercontent.com/JensDeCraecker/harpportfolio/gh-pages/_harp/assets/images/banner.jpg);
+
 }
 
 /*PURE*/
@@ -233,6 +233,11 @@ footer ul a {
 
 button {
     margin-top: 20px;
+}
+
+.js-connect{
+    text-decoration: underline;
+    color: $black;
 }
 
 
