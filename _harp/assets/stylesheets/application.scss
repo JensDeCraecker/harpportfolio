@@ -268,10 +268,15 @@ button {
 @media (max-width: 52em) {
       .pure-button{
         width: 20%;
+        font-size: 0.8em;
       }
 
       .pure-menu-item a{
         font-size: 0.8em;
+      }
+
+      input{
+        font-size: 0.6em;
       }
 }
 
